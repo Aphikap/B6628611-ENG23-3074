@@ -3,9 +3,6 @@ pipeline {
         label 'k8s-agent-1'
     }
 
-    triggers {
-        githubPush()
-    }
 
     environment {
         APP_NAME    = 'my-nginx-web'
